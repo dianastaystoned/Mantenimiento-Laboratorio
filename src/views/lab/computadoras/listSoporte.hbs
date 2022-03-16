@@ -1,0 +1,27 @@
+<div class="home-content">
+    <h1 class="text-center">Listado de computadoras</h1><br><br>
+    <div class="overview-boxes">
+    {{#each comp}}
+      <div class="box">
+        <div class="right-side">
+            <div class="box-topic">{{lab.nombre}}</div>
+            <div class="box-topic">{{marca}}</div>
+            <div class="number">{{codigo}}</div>
+            <div class="box-topic">{{estatus}}</div>
+            <div class="indicator">
+              <span class="text">Procesador: {{procesador}}</span>
+            </div>
+            <div class="indicator">
+              <span class="text">Memoria RAM: {{memoria}}</span>
+            </div>
+            <div class="indicator">
+              <span class="text">Conexión: {{conexion}}</span>
+            </div>
+        </div><br><br>
+        <a href="/lab/addticket/{{id}}"><i class='bx bxs-file-plus cart three'></i></i></a>
+        <a href="/lab/unkeep/{{id}}"><i class='bx bx-cog cart two'></i></a>
+        <a href="/lab/tickets/{{id}}"><i class='bx bxs-receipt cart'></i></a>
+      </div>
+    {{/each}}
+    </div>
+</div>

@@ -1,0 +1,36 @@
+{{#if user}}
+<div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-redux' ></i>
+      <span class="logo_name">Escuela</span>
+    </div>
+    
+      <ul class="nav-links">
+        <li>
+          <a href="/lab">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Laboratorio</span>
+          </a>
+        </li>
+        <li>
+          <a href="/lab/users">
+            <i class='bx bx-user-plus'></i>
+            <span class="links_name">Usuarios</span>
+          </a>
+        </li>
+        <li>
+          <a href="/lab/computadoras">
+            <i class='bx bx-laptop' ></i>
+            <span class="links_name">Computadoras</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="/logout">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Cerrar sesión</span>
+          </a>
+        </li>
+      </ul>
+      
+  </div>
+  {{/if}}

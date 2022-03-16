@@ -1,0 +1,66 @@
+{{!-- <div class="container p-4">
+    <h3 class="text-center">Lista de laboratorios</h3>
+    <div class="row">
+        {{#each lab}}
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title text-uppercase">
+                        {{nombre}}
+                    </h3>
+                    <p class="m-2">{{codigo}}</p>
+                    <p class="m-2">{{edificio}}</p>
+                    <a class="btn btn-danger btn-block" href="/lab/delete/{{id}}">
+                        Borrar
+                    </a>
+                    <a class="btn btn-primary btn-block" href="/lab/edit/{{id}}">
+                        Editar
+                    </a>
+                    <a class="btn btn-warning btn-block" href="/lab/computadora/{{id}}">
+                        Ver equipos
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>There are not Links saved yet.</p>
+                <a href="/lab/add">Create One!</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="col-md-4 mx-auto">
+        <div class="card card-body text-center">
+            <h3 class="text-center">Agregar...  <a href="/lab/add"><i class="fas fa-plus-circle"></i></a></h3>
+        </div>
+    </div>
+</div>  --}}
+<div class="home-content">
+    <h1 class="text-center">Lista de laboratorios</h1> <br><br>
+    <div class="overview-boxes">
+    {{#each lab}}
+      <div class="box">
+        <div class="right-side">
+            <div class="box-topic">{{nombre}}</div>
+            <div class="number">{{codigo}}</div>
+            <div class="indicator">
+              <span class="text">Edificio: {{edificio}}</span>
+            </div>
+        </div><br><br>
+        <a href="/lab/delete/{{id}}"><i class='bx bxs-trash alt cart four'></i></a>
+        <a href="/lab/edit/{{id}}"><i class='bx bxs-edit-alt cart'></i></a>
+        <a href="/lab/computadora/{{id}}"><i class='bx bx-laptop cart three' ></i></a>
+      </div>
+    {{/each}}
+    </div>
+    <div class="overview-boxes text-center">
+      <div class="box">
+        <div class="right-side">
+            <div class="number">Agregar...</div>
+        </div>
+        <a href="/lab/add"><i class='bx bx-plus cart two'></i></a>
+      </div>
+    </div>
+</div>

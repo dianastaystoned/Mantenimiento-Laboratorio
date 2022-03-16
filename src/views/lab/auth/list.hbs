@@ -1,0 +1,22 @@
+<div class="home-content">
+    <h1 class="text-center">Lista de usuarios</h1>
+    <div class="overview-boxes">
+    {{#each user}}
+      <div class="box">
+        <div class="right-side">
+            <div class="box-topic">{{fullname}}</div>
+            <div class="number">{{username}}</div>
+        </div><br><br>
+        <a href="/lab/deleteuser/{{id}}"><i class='bx bxs-trash alt cart four'></i></a>
+      </div>
+    {{/each}}
+    </div>
+    <div class="overview-boxes text-center">
+      <div class="box">
+        <div class="right-side">
+            <div class="number">Agregar...</div>
+        </div>
+        <a href="/lab/adduser"><i class='bx bx-plus cart two'></i></a>
+      </div>
+    </div>
+</div>

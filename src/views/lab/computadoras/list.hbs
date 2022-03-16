@@ -1,0 +1,120 @@
+{{!-- <div class="container p-4">
+    <h3>Añade computadoras al laboratorio de {{lab.nombre}}</h3>
+    
+    <div class="row">
+        {{#each comp}}
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title text-uppercase">
+                        {{marca}}
+                    </h3>
+                    <p class="m-2">{{codigo}}</p>
+                    <p class="m-2">{{monitor}}</p>
+                    <p class="m-2">{{memoria}}</p>
+                    <p class="m-2">{{procesador}}</p>
+                    <p class="m-2">{{estatus}}</p>
+                    <p class="m-2">{{conexion}}</p>
+                    <a class="btn btn-danger btn-block" href="/lab/delete/{{id}}">
+                        Borrar
+                    </a>
+                    <a class="btn btn-primary btn-block" href="/lab/editcompu/{{id}}">
+                        Editar
+                    </a>
+                    <a class="btn btn-warning btn-block" href="/lab/unkeep/{{id}}">
+                        Mantenimiento
+                    </a>
+                    <a class="btn btn-secondary btn-block" href="/lab/addticket/{{id}}">
+                        Ticket
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>Aún no tienes ninguna computadora</p>
+                <a href="/lab/addcompu/{{lab.id}}">Agrega algunas</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="col-md-4 mx-auto">
+        <div class="card card-body text-center">
+            <h3 class="text-center">Agregar...  <a href="/lab/addcompu/{{lab.id}}"><i class="fas fa-plus-circle"></i></a></h3>
+        </div>
+    </div>
+</div> --}}
+
+{{!-- <div class="home-content">
+    <h1 class="text-center">Añade computadoras al laboratorio de {{lab.nombre}}</h1>
+    <div class="overview-boxes">
+    {{#each comp}}
+      <div class="box">
+        <div class="right-side">
+            <div class="box-topic">{{marca}}</div>
+            <div class="number">{{codigo}}</div>
+            <div class="box-topic">{{estatus}}</div>
+            <div class="indicator">
+              <span class="text">Procesador: {{procesador}}</span>
+            </div>
+            <div class="indicator">
+              <span class="text">Memoria RAM: {{memoria}}</span>
+            </div>
+            <div class="indicator">
+              <span class="text">Conexión: {{conexion}}</span>
+            </div>
+        </div><br><br>
+        <a href="/lab/deletecomputer/{{id}}"><i class='bx bxs-trash alt cart four'></i></a>
+        <a href="/lab/editcompu/{{id}}"><i class='bx bxs-edit-alt cart'></i></a>
+        <a href="/lab/addticket/{{id}}"><i class='bx bxs-file-plus cart three'></i></i></a>
+        <a href="/lab/unkeep/{{id}}"><i class='bx bx-cog cart two'></i></a>
+      </div>
+    {{/each}}
+    </div>
+    <div class="overview-boxes text-center">
+      <div class="box">
+        <div class="right-side">
+            <div class="number">Agregar...</div>
+        </div>
+        <a href="/lab/addcompu/{{lab.id}}"><i class='bx bx-plus cart two'></i></a>
+      </div>
+    </div>
+</div> --}}
+
+<div class="home-content">
+    <h1 class="text-center">Lista de computadoras del laboratorio {{lab.nombre}}</h1>
+    <div class="overview-boxes">
+    {{#each comp}}
+      <div class="box">
+        <div class="right-side">
+            <div class="box-topic">{{marca}}</div>
+            <div class="number">{{codigo}}</div>
+            <div class="number">{{estado}}</div>
+            <div class="indicator">
+              <span class="text">Procesador: {{procesador}}</span>
+            </div>
+            <div class="indicator">
+              <span class="text">Memoria RAM: {{memoria}}</span>
+            </div>
+            <div class="indicator">
+              <span class="text">Conexión: {{conexion}}</span>
+            </div>
+        </div><br><br>
+        <a href="/lab/deletecomputer/{{id}}"><i class='bx bxs-trash alt cart four'></i></a>
+        <a href="/lab/editcompu/{{id}}"><i class='bx bxs-edit-alt cart'></i></a>
+        <a href="/lab/addticket/{{id}}"><i class='bx bxs-file-plus cart three'></i></i></a>
+        <a href="/lab/unkeep/{{id}}"><i class='bx bx-cog cart two'></i></a>
+        <a href="/lab/tickets/{{id}}"><i class='bx bxs-receipt cart'></i></a>
+      </div>
+    {{/each}}
+    </div>
+    <div class="overview-boxes text-center">
+      <div class="box">
+        <div class="right-side">
+            <div class="number">Agregar...</div>
+        </div>
+        <a href="/lab/addcompu/{{lab.id}}"><i class='bx bx-plus cart two'></i></a>
+      </div>
+    </div>
+</div>

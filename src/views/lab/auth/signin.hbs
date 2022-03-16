@@ -1,0 +1,48 @@
+{{!-- <div class="home-content">
+    <div class="overview-boxes">
+      <div class="box col-md-4 mx-auto">
+        <div class="right-side">
+            <form action="/signin" method="POST">
+                <div class="form-group">
+                    <input type="text" name="username" placeholder="Usuario" class="form-control" required autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="password" placeholder="Contraseña" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success btn-block">
+                        Entrar
+                    </button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</div> --}}
+<div class="home-content">
+     
+      <div class="overview-boxes">
+      <div class="box col-md-8 mx-auto" style="background-color:rgb(200, 210, 255)">
+        <div class="right-side">
+            <div class="login-container">
+          <div class="login-info-container">
+              <br><br>
+            <h1 class="title">Iniciar sesión</h1>
+            <div class="social-login">
+                 
+            </div>
+            <form class="inputs-container" method="POST" action="/signin">
+                <input class="input" type="username" placeholder="Usuario" name="username" required>
+                <input class="input" type="password" placeholder="Contraseña" name="password" required>
+                <p>Forgot password? <span class="span">Click here</span></p>
+                <button class="btn btn-primary btn-block">
+                    Iniciar sesión
+                </button>
+            </form>
+          </div>
+            <img class="image-container" src="https://datosdiana.blob.core.windows.net/image/login.svg" alt="">
+      </div>
+        </div>
+      </div>
+    </div>
+</div>

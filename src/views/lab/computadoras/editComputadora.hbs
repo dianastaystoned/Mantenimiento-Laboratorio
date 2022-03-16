@@ -1,0 +1,95 @@
+{{!-- <div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <h1 class="title">Información de la computadora {{comp.codigo}}</h1>
+            <div class="card">
+                <div class="card-body">
+                    <form action="/lab/editcompu/{{comp.id}}" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="codigo" placeholder="Código" value="{{comp.codigo}}" class="form-control" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="marca" placeholder="Marca" class="form-control" value="{{comp.marca}}" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="monitor" placeholder="Monitor" value="{{comp.monitor}}" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="memoria" placeholder="Memoria" value="{{comp.memoria}}" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="procesador" placeholder="Procesador" value="{{comp.procesador}}" class="form-control" required>
+                        </div>
+                        <div class="form-group" required>
+                            <label for="estatus">Estatus</label>
+                            <select name="estatus"  class="form-control">
+                                <option value="Funcionando">Funcionando</option>
+                                <option value="Reparación">Reparación</option>
+                                <option value="Baja">Baja</option>
+                            </select>
+                        </div> 
+                        <div class="form-group" required>
+                            <label for="conexion">Conexión</label>
+                            <select name="status"  class="form-control">
+                                <option value="To read">Alambrico</option>
+                                <option value="Reading">Inalambrico</option>
+                            </select>
+                        </div> 
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> --}}
+
+<div class="home-content">
+    <h1 class="text-center">Información de la computadora {{comp.codigo}}</h1><br><br>
+    <div class="overview-boxes">
+      <div class="box col-md-4 mx-auto">
+        <div class="right-side">
+            <form action="/lab/editcompu/{{comp.id}}" method="POST">
+                <div class="form-group">
+                    <input type="text" name="codigo" placeholder="Código" value="{{comp.codigo}}" class="form-control" required autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="marca" placeholder="Marca" class="form-control" value="{{comp.marca}}" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="monitor" placeholder="Monitor" value="{{comp.monitor}}" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="memoria" placeholder="Memoria" value="{{comp.memoria}}" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="procesador" placeholder="Procesador" value="{{comp.procesador}}" class="form-control" required>
+                </div>
+                <div class="form-group" required>
+                    <label for="estatus">Estatus</label>
+                    <select name="estatus"  class="form-control">
+                        <option value="Funcionando">Funcionando</option>
+                        <option value="Reparación">Reparación</option>
+                        <option value="Baja">Baja</option>
+                    </select>
+                </div> 
+                <div class="form-group" required>
+                    <label for="conexion">Conexión</label>
+                    <select name="status"  class="form-control">
+                        <option value="To read">Alambrico</option>
+                        <option value="Reading">Inalambrico</option>
+                    </select>
+                </div> 
+                <div class="form-group">
+                    <button class="btn btn-success btn-block">
+                        Guardar
+                    </button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+</div>

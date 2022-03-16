@@ -1,0 +1,17 @@
+{{#if success}}
+<div class="home-content">
+    <div class="toast alert alert-dismissible fade show">
+        <div class="toast-content">
+            <i class="fas fa-solid fa-check check"></i>
+            <div class="message">
+                <span class="text text-1">Completado</span>
+                <span class="text text-1">{{success}}</span>
+            </div>
+        </div>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="progress"></div>
+    </div>
+</div>
+{{/if}}
